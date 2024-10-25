@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(to right, #e0bbff, #ffccf9); /* Light gradient from lavender to light pink */
+    color: #330033; /* Darker text color for contrast */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Maximum width for the content */
+    margin: auto; /* Center the container */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the main heading */
+    color: #5c007a; /* Darker purple for headings */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+    margin: 10px 0 5px; /* Spacing for labels */
+}
+
+input[type="text"], button {
+    padding: 10px; /* Padding for input fields and buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="text"] {
+    margin-bottom: 10px; /* Space between input fields */
+    border: 1px solid #d1b2e0; /* Light purple border */
+}
+
+button {
+    background-color: #ff85b3; /* Light pink button color */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #ff69b4; /* Darker pink on hover */
+}
+
+h2 {
+    text-align: center; /* Center prediction result */
+    margin-top: 20px; /* Space above prediction result */
+}
