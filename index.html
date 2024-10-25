@@ -1,0 +1,50 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <body>
+    <div class="container">
+        <h1>Cancer Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="mean_radius">Mean Radius:</label>
+            <input type="text" name="mean_radius" required>
+
+            <label for="mean_texture">Mean Texture:</label>
+            <input type="text" name="mean_texture" required>
+
+            <label for="mean_perimeter">Mean Perimeter:</label>
+            <input type="text" name="mean_perimeter" required>
+
+            <label for="mean_area">Mean Area:</label>
+            <input type="text" name="mean_area" required>
+
+            <label for="mean_smoothness">Mean Smoothness:</label>
+            <input type="text" name="mean_smoothness" required>
+
+            <label for="mean_compactness">Mean Compactness:</label>
+            <input type="text" name="mean_compactness" required>
+
+            <label for="mean_concavity">Mean Concavity:</label>
+            <input type="text" name="mean_concavity" required>
+
+            <label for="mean_concave_points">Mean Concave Points:</label>
+            <input type="text" name="mean_concave_points" required>
+
+            <label for="mean_symmetry">Mean Symmetry:</label>
+            <input type="text" name="mean_symmetry" required>
+
+            <label for="mean_fractal_dimension">Mean Fractal Dimension:</label>
+            <input type="text" name="mean_fractal_dimension" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction is not none %}
+        <h2>Prediction: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
